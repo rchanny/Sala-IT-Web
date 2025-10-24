@@ -93,9 +93,10 @@ body {
 }
 
 .input-mame {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     display: flex;
+    gap: 10px;
 
 }
 
@@ -103,9 +104,10 @@ body {
     font-size: 14px;
     color: rgb(0, 15, 28);
     display: block;
-    margin: 10px;
-    padding: 10px;
-    justify-items: space-between;
+
+
+
+
 }
 
 .input-mame input {
