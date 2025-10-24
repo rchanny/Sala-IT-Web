@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif, Arial, Helvetica;
     box-sizing: border-box;
 }
 
@@ -14,65 +13,55 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.login-form {
+.register-form {
     background-color: white;
     padding: 40px 20px;
     border-radius: 18px;
     text-align: center;
+    width: 300px;
     width: 400px;
+
 }
 
-.login-form h3 {
+.register-form h2 {
     margin-bottom: 5px;
     color: rgb(0, 15, 28);
-    font-size: 20px;
+    font-size: 30px;
 }
 
-.login-form p {
+.register-form p {
     margin-bottom: 20px;
     color: rgb(108, 121, 133);
     font-size: 12px;
 }
 
-.login-form img {
-    padding: 8px;
+.register-form img {
+    background-color: rgb(178, 189, 28);
+    border-radius: 50%;
     width: 100px;
     height: 100px;
-    background-color: rgb(0, 15, 28);
-    border-radius: 50%;
+    padding: 8px;
     margin-bottom: 20px;
+
 }
 
-.login-group {
+.register-group {
     text-align: left;
 }
 
-.login-group label {
+.register-group label {
     font-size: 14px;
     color: rgb(0, 15, 28);
     display: block;
 }
 
-.login-group input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 20px 0;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 6px;
-}
-
-.login-group input:focus {
+.register-group input:focus {
     outline: none;
-    border-color: rgb(0, 15, 28);
+    border-color: rgb(12, 84, 148);
     box-shadow: 0 0 5px rgba(0, 15, 28, 0.5);
 }
 
-.forgot-password {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.login-btn {
+.button-register {
     margin-top: 50px;
     background-color: rgb(12, 84, 148);
     color: white;
@@ -83,37 +72,23 @@ body {
     font-size: 16px;
 }
 
-.sign-up-link {
+.sign-in {
     margin-top: 20px;
     font-size: 12px;
     color: rgb(108, 121, 133);
-    margin-top: 30px;
 }
 
-.input-mame {
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
+.sign-in a {
+    color: rgb(12, 84, 148);
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 20px;
 }
 
-.input-mame label {
-    font-size: 14px;
-    color: rgb(0, 15, 28);
-    display: block;
-}
-
-.input-mame input {
+.register-group input {
     width: 100%;
     padding: 10px;
-    margin: 8px 0 0px 0;
+    margin: 8px 0 20px 0;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 6px;
-    display: block;
-}
-
-.input-mame input:focus {
-    outline: none;
-    border-color: rgb(0, 15, 28);
-    box-shadow: 0 0 5px rgba(0, 15, 28, 0.5);
 }
