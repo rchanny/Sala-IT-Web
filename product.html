@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a2a4f;
+            color: white;
+        }
+
+        .product-card {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            transform: scale(1.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .btn-card {
+            padding: 10px 15px;
+            background-color: #e2d822;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-card:hover {
+            background-color: #ff3b2e;
+        }
+
+        .main-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        @media (max-width: 670px) {
+            .main-card {
+                flex-direction: column;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .btn-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #1db6b8;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html"><button class="btn-home"> <i data-lucide="house"></i>HOME</button></a>
+    <!-- Card Backpack -->
+    <div class="main-main-card">
+        <div class="main-card">
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+        </div>
+        <div class="main-card">
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+                <p class="price">$100.00</p>
+
+                <p class="title">Backpack</p>
+                <button class="btn-card">
+                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Icon -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
