@@ -21,6 +21,7 @@
             width: 300px;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         .product-card:hover {
@@ -68,23 +69,15 @@
             background-color: #ff3b2e;
         }
 
-        .main-card {
+        /* .main-card {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 30px;
             padding: 50px;
-        }
+        } */
 
-        @media (max-width: 670px) {
-            .main-card {
-                flex-direction: column;
-                gap: 50px;
-                justify-content: center;
-                align-items: center;
-            }
 
-        }
 
         .btn-home {
             position: absolute;
@@ -103,81 +96,110 @@
             gap: 10px;
             justify-items: center;
         }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 80px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        @media (max-width: 780px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                flex-wrap: nowrap;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        @media (max-width: 450px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                flex-wrap: nowrap;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .product-card span {
+            color: white;
+            background-color: red;
+            border-radius: 15px;
+            padding: 10px;
+            position: absolute;
+            top: 40px;
+            transform: rotate(20deg);
+        }
     </style>
 </head>
 
 <body>
     <a href="./index.html"><button class="btn-home"> <i data-lucide="house"></i>HOME</button></a>
     <!-- Card Backpack -->
-    <div class="main-main-card">
-        <div class="main-card">
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
+    <div class="card-container">
 
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
 
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
+        <div class="product-card">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+            <p class="price">$100.00</p>
 
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
-
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
+            <p class="title">Backpack</p>
+            <button class="btn-card">
+                <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            <span>Discount 30%</span>
         </div>
-        <div class="main-card">
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
+        <div class="product-card">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+            <p class="price">$100.00</p>
 
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
-
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
-
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
-                <p class="price">$100.00</p>
-
-                <p class="title">Backpack</p>
-                <button class="btn-card">
-                    <i data-lucide="shopping-cart"></i>Add to Cart</button>
-            </div>
+            <p class="title">Backpack</p>
+            <button class="btn-card">
+                <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            <span>Discount 30%</span>
         </div>
+        <div class="product-card">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+            <p class="price">$100.00</p>
+
+            <p class="title">Backpack</p>
+            <button class="btn-card">
+                <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            <span>Discount 30%</span>
+        </div>
+        <div class="product-card">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+            <p class="price">$100.00</p>
+
+            <p class="title">Backpack</p>
+            <button class="btn-card">
+                <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            <span>Discount 30%</span>
+        </div>
+        <div class="product-card">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="backpack" />
+            <p class="price">$100.00</p>
+
+            <p class="title">Backpack</p>
+            <button class="btn-card">
+                <i data-lucide="shopping-cart"></i>Add to Cart</button>
+            <span>Discount 30%</span>
+        </div>
+
+    </div>
     </div>
 
     <!-- Script for Icon -->
